@@ -40,10 +40,6 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -52,6 +48,50 @@
         </div>
       </nav>
 
+     <main>
+        <div class="container-fluid m-2">
+          <div class="row">
+            <div class="col-sm-10"></div>
+            <div class="col-sm-2">
+              <button type="button" class="btn btn-outline-dark btn-sm shadow-sm">Ajouter un nouveau collaborateur</button>
+            </div>
+          </div>
+          <div class="row">
+            <h1 class="col-10">Les collaborateurs</h1>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <form class="form-inline">
+                <p>Rechercher un nom ou un prénom qui commence par :</p>
+                <div class="form-group mx-sm-3 mb-2">
+                  <label for="recherche" class="sr-only"></label>
+                  <input type="text" class="form-control border-dark" id="recherche">
+                </div>
+                <button type="submit" class="btn btn-outline-dark btn-sm shadow-sm mb-2">Rechercher</button>
+                <div class="form-check offset-md-1">
+                  <input class="form-check-input ml-5" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label ml-2" for="defaultCheck1">
+                    Voir les collaborateurs désactivés
+                  </label>
+                </div>
+                <div class="col-12">
+                  <div class="input-group col-md-6 offset-md-1">
+                    <div class="">
+                      <label class=" mr-5" for="inputGroupSelect01">Filter par département : </label>
+                    </div>
+                    <select class="form-control col-4" id="inputGroupSelect01">
+                      <option selected>Tous</option>
+                      <option value="1">Comptabilité</option>
+                      <option value="2">Ressources Humaines</option>
+                      <option value="3">Informatique</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
